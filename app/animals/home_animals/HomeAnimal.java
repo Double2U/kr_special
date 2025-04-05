@@ -1,0 +1,9 @@
+package app.animals.home_animals;
+
+import app.animals.Animal;
+
+public class HomeAnimal extends Animal {
+    public HomeAnimal(String name, String birthDate) {
+        super(name, birthDate);
+    }
+}

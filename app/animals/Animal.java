@@ -3,8 +3,7 @@ package app.animals;
 import java.util.ArrayList;
 import java.util.List;
 
-class Command 
-{
+class Command {
     private String name;
 
     public Command(String name) {
@@ -16,14 +15,12 @@ class Command
     }
 }
 
-abstract class Animal
-{
+public abstract class Animal {
     private String name;
     private ArrayList<Command> commands;
     private String birthDate;
 
-    Animal(String name,  String birhDate)
-    {
+    public Animal(String name, String birhDate) {
         this.name = name;
         this.commands = new ArrayList<>();
         this.birthDate = birhDate;
@@ -41,8 +38,7 @@ abstract class Animal
         return birthDate;
     }
 
-    public void learnNewCommand(String newCommand)
-    {
+    public void learnNewCommand(String newCommand) {
         Command command = new Command(newCommand);
         this.commands.add(command);
     }
