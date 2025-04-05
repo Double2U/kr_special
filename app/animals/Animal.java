@@ -20,9 +20,10 @@ public abstract class Animal {
     private ArrayList<Command> commands;
     private String birthDate;
 
-    public Animal(String name, String birhDate) {
+    public Animal(String name, String command, String birhDate) {
         this.name = name;
         this.commands = new ArrayList<>();
+        this.commands.add(new Command(command));
         this.birthDate = birhDate;
     }
 

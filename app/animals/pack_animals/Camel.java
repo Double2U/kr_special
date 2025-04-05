@@ -1,11 +1,9 @@
 package app.animals.pack_animals;
 
-import app.animals.pack_animals.PackAnimal;
-
 public class Camel extends PackAnimal
 {
-    public Camel(String name, String birthDate) {
-        super(name, birthDate);
+    public Camel(String name, String command, String birthDate) {
+        super(name, command, birthDate);
     }
 
     public String chew() {

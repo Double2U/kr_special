@@ -1,11 +1,10 @@
 package app.animals.home_animals;
 
-import app.animals.home_animals.HomeAnimal;
 
 public class Hamster extends HomeAnimal
 {
-    public Hamster(String name,  String birthDate) {
-        super(name, birthDate);
+    public Hamster(String name, String command, String birthDate) {
+        super(name, command, birthDate);
     }
 
     public String run() {

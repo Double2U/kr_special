@@ -1,11 +1,9 @@
 package app.animals.home_animals;
 
-import app.animals.home_animals.HomeAnimal;
-
 public class Cat extends HomeAnimal
 {
-    public Cat(String name, String birthDate) {
-        super(name, birthDate);
+    public Cat(String name, String command, String birthDate) {
+        super(name, command, birthDate);
     }
 
     public String meow() {
